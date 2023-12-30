@@ -5,8 +5,8 @@ import type { Metadata } from 'next';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  description: 'Next 13 Starter',
-  title: 'Next 13 stater with ESLint, Prettier, and Tailwind',
+  description: 'Next 14 Starter',
+  title: 'Next 14 stater with ESLint, Prettier, and Tailwind',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
