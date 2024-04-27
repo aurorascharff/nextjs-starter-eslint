@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   description: 'Next 14 Starter',
-  title: 'Next 14 stater with ESLint, Prettier, and Tailwind',
+  title: 'Next 14 starter with ESLint, Prettier, and Tailwind',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
