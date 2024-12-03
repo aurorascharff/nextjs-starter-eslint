@@ -64,7 +64,7 @@ Ignored files are now inside the `ignores: {}` section of the `eslint.config.mjs
 Verify that eslint works by running the following command:
 
 ```bash
-next lint
+npm run lint
 ```
 
 You should see the following output:
