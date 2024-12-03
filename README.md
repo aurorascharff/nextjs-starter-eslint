@@ -34,7 +34,7 @@ Wait for the migration to finish and then run the following command to install t
 npm install @eslint/compat globals @eslint/js @eslint/eslintrc -D
 ```
 
-Reload the editor and open the new `.eslint.config.mjs` file.
+Reload the editor and open the new `eslint.config.mjs` file.
 
 Assign the default to a variable before exporting it as prompted by eslint. Then save it to run eslint format on the file.
 
@@ -49,6 +49,8 @@ export default eslintConfig;
 ```
 
 Delete the `eslint.json` and `.eslintignore` files.
+
+Ignored files are now inside the `ignores: {}` section of the `eslint.config.mjs` file.
 
 Verify that eslint works by running the following command:
 
