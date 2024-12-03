@@ -22,6 +22,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Upgrading to Eslint 9 (executed on 2024-12-03)
 
+Refering to the [migration guide](https://eslint.org/docs/latest/use/configure/migration-guide), run the following commands:
+
 ```bash
 ncu -u 
 npm install --force
