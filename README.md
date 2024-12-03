@@ -22,11 +22,18 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Upgrading to Eslint 9 (executed on 2024-12-03)
 
-Refering to the [migration guide](https://eslint.org/docs/latest/use/configure/migration-guide), run the following commands:
+First, update the eslint package to the latest version. I'll use the `ncu` package to update everyhting in the package.json file.
 
 ```bash
 ncu -u 
 npm install --force
+```
+
+Then, update the eslint configuration file to the new format.
+
+Refering to the [migration guide](https://eslint.org/docs/latest/use/configure/migration-guide), run the following command:
+
+```bash
 npx @eslint/migrate-config .eslintrc.json
 ```
 
