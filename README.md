@@ -20,6 +20,56 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Upgrading to Eslint 9 (executed on 2024-12-03)
+
+```bash
+ncu -u 
+npm install --force
+npx @eslint/migrate-config .eslintrc.json
+```
+
+Wait for the migration to finish and then run the following command to install the necessary dependencies (as promted by the migration tool):
+
+```bash
+npm install @eslint/compat globals @eslint/js @eslint/eslintrc -D
+```
+
+Reload the editor and open the new `.eslint.config.mjs` file.
+
+Assign the default to a variable before exporting it as prompted by eslint. Then save it to run eslint format on the file.
+
+Aslo, remove excess spacing between lines to clean up the file.
+
+```javascript
+const eslintConfig = [
+  // your config here
+];
+
+export default eslintConfig;
+```
+
+Delete the `eslint.json` and `.eslintignore` files.
+
+Verify that eslint works by running the following command:
+
+```bash
+next lint
+```
+
+You should see the following output:
+
+```bash
+✔ No ESLint warnings or errors
+```
+
+Also, veify that autoformatting works by adding the following to any tsx file:
+
+```javascript
+const t = "t"
+```
+
+Then save the file and verify that the variable is deleted and the file is formatted correctly.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
