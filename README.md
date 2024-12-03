@@ -22,7 +22,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Upgrading to Eslint 9 (executed on 2024-12-03)
 
-First, update the eslint package to the latest version. I'll use the `ncu` package to update everyhting in the package.json file.
+First, update the eslint package to the latest version. I'll use the `ncu` package to update everything in the package.json file.
 
 ```bash
 ncu -u 
@@ -31,13 +31,13 @@ npm install --force
 
 Then, update the eslint configuration file to the new format.
 
-Refering to the [migration guide](https://eslint.org/docs/latest/use/configure/migration-guide), run the following command:
+Referring to the [migration guide](https://eslint.org/docs/latest/use/configure/migration-guide), run the following command:
 
 ```bash
 npx @eslint/migrate-config .eslintrc.json
 ```
 
-Wait for the migration to finish and then run the following command to install the necessary dependencies (as promted by the migration tool):
+Wait for the migration to finish and then run the following command to install the necessary dependencies (as prompted by the migration tool):
 
 ```bash
 npm install @eslint/compat globals @eslint/js @eslint/eslintrc -D
@@ -73,7 +73,7 @@ You should see the following output:
 ✔ No ESLint warnings or errors
 ```
 
-Also, veify that autoformatting works by adding the following to any tsx file:
+Also, verify that autoformatting works by adding the following to any tsx file:
 
 ```javascript
 const t = "t"
