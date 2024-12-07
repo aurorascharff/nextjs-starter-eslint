@@ -26,7 +26,7 @@ First, update the eslint package to the latest version. I'll use the `ncu` packa
 
 ```bash
 ncu -u 
-npm install --force
+npm install
 ```
 
 Then, update the eslint configuration file to the new format.
