@@ -6,7 +6,7 @@
   ],
   "extensions": {
     "recommendations": [
-      "prettier.prettier-vscode",
+      "esbenp.prettier-vscode",
       "rvest.vs-code-prettier-eslint",
       "dsznajder.es7-react-js-snippets",
       "dbaeumer.vscode-eslint",
