@@ -6,8 +6,8 @@
   ],
   "extensions": {
     "recommendations": [
+      "prettier.prettier-vscode",
       "rvest.vs-code-prettier-eslint",
-      "esbenp.prettier-vscode",
       "dsznajder.es7-react-js-snippets",
       "dbaeumer.vscode-eslint",
     ],
